@@ -1,5 +1,6 @@
 {
   "name": "textutils",
+  "homepage": "https://Kronos0477.github.io/TextUtils",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,9 +8,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":" npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1"
@@ -24,6 +28,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "vite-plugin-gh-pages": "^1.0.1"
   }
 }
